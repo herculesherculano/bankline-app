@@ -1,6 +1,6 @@
 <h1 align="center"> Bankline APP </h1> 
 
-<h2 align="justify">App Front-end desenvolvido com o Framework Angular que através do consumo da api bankline-api simula as movimentações de um correntista em um banco, onde é possível cadastrar correntistas, criar receitas e despesas, e listar todas as movimentações de um correntista.</h2>
+<h2 align="justify">App Front-end desenvolvido com o Framework Angular, que através do consumo da api bankline-api simula as movimentações de um correntista em um banco, onde é possível cadastrar e deletar correntistas, criar receitas e despesas, e listar todas as movimentações de um correntista.</h2>
 
 <h2 align="justify"> Projeto desenvolvido durante a Santander DevWeek com a DIO, usando o Framework Angular. </h2>
 
