@@ -1,27 +1,13 @@
-# BanklineApp
+<h1 align="center"> Bankline APP </h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
+<h2 align="justify">App Front-end desenvolvido com o Framework Angular que através do consumo da api bankline-api simula as movimentações de um correntista em um banco, onde é possível cadastrar correntistas, criar receitas e despesas, e listar todas as movimentações de um correntista.</h2>
 
-## Development server
+<h2 align="justify"> Projeto desenvolvido durante a Santander DevWeek com a DIO, usando o Framework Angular. </h2>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Deploy do APP no Heroku:
 
-## Code scaffolding
+> https://hercules-dio-bankline-app.herokuapp.com/
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
+![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
