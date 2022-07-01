@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { response } from 'express';
 import { CorrentistaService } from 'src/app/services/correntista.service';
+import { isTemplateExpression } from 'typescript';
 
 @Component({
   selector: 'app-correntista',
@@ -11,9 +13,13 @@ export class CorrentistaComponent implements OnInit {
   correntistas:any;
   cpf:any;
   nome:any;
+  idConta:any;
+  correntista:any;
   
   constructor(
     private correntistaService: CorrentistaService,
+    
+    
   ) { }
 
   ngOnInit(): void {
@@ -48,6 +54,18 @@ export class CorrentistaComponent implements OnInit {
       error => {
         console.log(error);
       });
+}
+
+delete(idConta:any) {
+  
+  console.log("id", idConta);
+
+  this.correntistaService.delete(idConta)
+  .subscribe((data:any)=>{
+    console.log(data);
+    console.log("correntista deletado");  
+  });
+  
 }
 
 }

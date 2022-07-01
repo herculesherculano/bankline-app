@@ -16,6 +16,10 @@ import localePt from '@angular/common/locales/pt';
 
 import { CurrencyMaskModule } from "ng2-currency-mask";
 import { CorrentistaComponent } from './components/correntista/correntista.component';
+import { ConfirmModalComponent } from './components/confirm-modal/confirm-modal.component';
+import { ModalComponent } from './components/modal/modal.component';
+
+
 
 
 registerLocaleData(localePt);
@@ -25,7 +29,10 @@ registerLocaleData(localePt);
     AppComponent,
     MovimentacaoListComponent,
     MovimentacaoNewComponent,
-    CorrentistaComponent
+    CorrentistaComponent,
+    ConfirmModalComponent,
+    ModalComponent
+    
   ],
   imports: [
     BrowserModule,

@@ -4,7 +4,7 @@
       <p class="lead-1">Cadastro de correntista</p>
       <hr class="my-2">
     </div>
-    <div class="row g-2">
+    <div class="row g-2" >
       <div class="col-md-3">
         <input  class="form-control" id="iCpf" [(ngModel)]="cpf"  placeholder="CPF">
       </div>
@@ -19,11 +19,14 @@
       </div>
     </div>
     <p></p>
-    <div *ngFor="let item of correntistas; index as i" class="card" style="width: 18rem;">
+    <div *ngFor="let item of correntistas; index as i" class="card"  style="width: 18rem;">
       <div class="card-body">
-        <h5 class="card-title">{{item.nome}}</h5>
+        
+        <h5 class="card-title" > {{item.id}}</h5>
+        <h5 class="card-title" > {{item.nome}}</h5>
         <p class="card-text">Conta N° {{item.conta.numero}}</p>
         <p class="card-text">Saldo {{item.conta.saldo | currency:'BRL'}}</p>
+        <button class="btn btn btn-outline-danger" type="button" (click)="delete(item.id)" >DELETE</button>
       </div>
     </div>
   </div>

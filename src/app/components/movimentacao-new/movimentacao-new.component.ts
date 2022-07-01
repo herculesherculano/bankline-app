@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { CorrentistaService } from 'src/app/services/correntista.service';
 import { MovimentacaoService } from 'src/app/services/movimentacao.service';
+import { ModalDismissReasons, NgbModal, NgbModalOptions } from '@ng-bootstrap/ng-bootstrap';
+import { ModalComponent } from '../modal/modal.component';
+
 
 @Component({
   selector: 'app-movimentacao-new',
@@ -19,6 +22,7 @@ export class MovimentacaoNewComponent implements OnInit {
   constructor(
     private movimentacaoService: MovimentacaoService,
     private correntistaService: CorrentistaService,
+    private modalService: NgbModal, 
     ) { }
 
   ngOnInit(): void {
@@ -45,7 +49,7 @@ export class MovimentacaoNewComponent implements OnInit {
       tipo:this.tipo,
       idConta:this.correntista.id,
       dataHora:this.dataHora
-
+      
   };
   console.log(movimentacao);
   this.movimentacaoService.create(movimentacao)
@@ -56,7 +60,18 @@ export class MovimentacaoNewComponent implements OnInit {
       error => {
         console.log(error);
       });
+
 }
+
+private opcoesModal: NgbModalOptions =
+{
+backdrop: 'static'
+};
+
+open() {
+  this.modalService.open(ModalComponent, this.opcoesModal);
+  
+  }
 
 
 }

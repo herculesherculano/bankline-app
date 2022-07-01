@@ -3,7 +3,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-const baseUrl = 'https://hercules-dio-bankline-api.herokuapp.com/';
+const baseUrl = 'http://localhost:8080/';
 @Injectable({
   providedIn: 'root'
 })
@@ -17,4 +17,11 @@ export class CorrentistaService {
   create(correntista:any): Observable<any> {
     return this.http.post(`${baseUrl}/correntistas`,correntista);
   }
+
+  delete(idConta:any): Observable<any> {
+    return this.http.delete(`${baseUrl}correntistas/${idConta}`);
+   
+  }
+
+
 }

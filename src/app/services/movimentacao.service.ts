@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-const baseUrl = 'https://hercules-dio-bankline-api.herokuapp.com/';
+const baseUrl = 'http://localhost:8080/';
 
 
 @Injectable({
