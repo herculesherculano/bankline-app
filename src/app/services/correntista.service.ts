@@ -3,7 +3,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-const baseUrl = 'http://localhost:8080/';
+const baseUrl = 'https://hercules-dio-bankline-api.herokuapp.com/';
 @Injectable({
   providedIn: 'root'
 })
@@ -19,7 +19,7 @@ export class CorrentistaService {
   }
 
   delete(idConta:any): Observable<any> {
-    return this.http.delete(`${baseUrl}correntistas/${idConta}`);
+    return this.http.delete(`${baseUrl}/correntistas/${idConta}`);
    
   }
 

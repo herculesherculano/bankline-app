@@ -70,8 +70,12 @@ backdrop: 'static'
 
 open() {
   this.modalService.open(ModalComponent, this.opcoesModal);
+    this.valor='',
+    this.descricao='',
+    this.tipo='',
+    this.correntista='',
+    this.dataHora=''
   
   }
-
 
 }
